@@ -8,6 +8,7 @@ GREEN = (0, 255, 0)
 GREY = (120,120,120)
 light = RED
 pray_for_me = 0
+racolor = (150,150,200)
 
 
 screen = pygame.display.set_mode((800, 600))
@@ -30,7 +31,7 @@ while gameRun:
             light = RED
         old_time = new_time
 
-    pygame.draw.rect(screen, GREY,(pray_for_me,200,40,40))
+    pygame.draw.rect(screen, racolor,(pray_for_me,200,40,40))
     pygame.draw.rect(screen,light,(550,10,40,40))
     pygame.display.update()
     clock.tick(60)
